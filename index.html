@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .insertProducts{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        width: 300px;
+    }
+</style>
+<body>
+
+    <div >
+        <h3>Add Products:</h3>
+        <form class="insertProducts"> 
+            <label for="name">Product Name: </label>
+            <input type="text" id="name"><br>
+            <label for="price">Price: </label>
+            <input type="number" id="price"><br>
+            <div>
+            <label for="color">Color: </label>
+            <input type="text" id="color">
+            <button  type="submit" id="colorBtn">Add</button>
+            </div><br>
+            <button type="submit" id="submitBtn" style="width: 70px;">Insert</button>
+        </form>
+    
+    </div>
+
+    <br>
+    <div class="getProduct">
+        <h3>Get Product:</h3>
+        <form>
+            <label for="getProd"></label>
+            <input type="text" id="product-name">
+            <button id="getProduct">Get Product</button>
+        </form>
+    </div>
+
+    <br>
+    <div class="updatePrice">
+        <h3>Update Price:</h3>
+        <form>
+            <label for="prodToUpdatePrice">Which product you want to change Price ?</label>
+            <input type="text" id="prodToUpdatePrice">
+            <label for="new-price">Enter new price</label>
+            <input type="number" id="new-price">
+            <button id="updatePrice">Update Price</button>
+        </form>
+    </div>
+<br>
+    <div class="removeProduct">
+      <h3>Remove Product:</h3>
+        <form >
+            <label for="removeProd">which Product you want to remove ?</label>
+            <input type="text" id="removeProd">
+            <button id="removeBtn">Remove</button>
+        </form>
+        
+    </div>
+    
+    
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
