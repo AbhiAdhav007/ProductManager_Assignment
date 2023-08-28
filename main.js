@@ -99,4 +99,7 @@ RemoveBtn.addEventListener('click' ,(event)=>{
     event.preventDefault();
 
     removeProduct(removeProductName.value);
+    if(removeProductName.value){
+        removeProductName.value = "";
+    }
 })

@@ -79,8 +79,10 @@ function updatePrice(prodName , newPrice){
 
 function removeProduct(prodName){
 
+    let flag = false;
     products.forEach((product , index) =>{
 
+        
         
         if(product.name === prodName){
             
@@ -88,11 +90,16 @@ function removeProduct(prodName){
                 products.splice(index, 1); // 2nd parameter means remove one item only
               }
               console.log(products);
+              console.log('Product is removed')
+              flag = true;
               return;
+              
         }
     })
 
-    console.log('Product that you want to remove is not valid')
+    if(!flag){
+        console.log('Product that you want to remove is not valid')
+    }
 }
 
 
